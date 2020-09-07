@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <table id="calculator-table">
+            <tr>
+                <td colspan="3"><input type="text" name="text" id="text" placeholder="Enter Number"></td>
+                <td><input type="button" value="C" onclick="clr()" id="button" style="background-color:#fc0909"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" name="button" id="button" onclick="enter('1')"></td>
+                <td><input type="button" value="2" name="button" id="button" onclick="enter('2')"></td>
+                <td><input type="button" value="3" name="button" id="button" onclick="enter('3')"></td>
+                <td><input type="button" value="+" name="button" id="button" onclick="enter('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" name="button" id="button" onclick="enter('4')"></td>
+                <td><input type="button" value="5" name="button" id="button" onclick="enter('5')"></td>
+                <td><input type="button" value="6" name="button" id="button" onclick="enter('6')"></td>
+                <td><input type="button" value="-" name="button" id="button" onclick="enter('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" name="button" id="button" onclick="enter('7')"></td>
+                <td><input type="button" value="8" name="button" id="button" onclick="enter('8')"></td>
+                <td><input type="button" value="9" name="button" id="button" onclick="enter('9')"></td>
+                <td><input type="button" value="*" name="button" id="button" onclick="enter('*')"></td>  
+            </tr>
+            <tr>
+                <td><input type="button" value="." name="button" id="button" onclick="enter('.')"></td>
+                <td><input type="button" value="0" name="button" id="button" onclick="enter('0')"></td>
+                <td style="color:#c9490e;"><input type="button" value="=" name="button" id="button" onclick="result()" style="background-color: #e05b1e;"></td>
+                <td><input type="button" value="/" name="button" id="button" onclick="enter('/')"></td>    
+            </tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
